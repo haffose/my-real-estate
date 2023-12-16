@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-real-estate
+    ports:
+    - '8080:80'
+    volumes:
+    - ./my-real-estate:/usr/local/apache2/htdocs
